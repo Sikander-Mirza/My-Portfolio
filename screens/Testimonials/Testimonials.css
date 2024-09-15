@@ -1,0 +1,57 @@
+/* Style for the testimonial item */
+.testimonial-item {
+    background-color: #222;
+    color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .testimonial-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Updated image style for proper sizing */
+  .testimonial-img {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image fits within the bounds */
+    border-radius: 50%; /* Make the image circular */
+    border: 3px solid #fff; /* Add white border */
+  }
+  
+  /* Styling for the star rating */
+  .star-rating .fa {
+    color: #ffd700;
+    font-size: 20px; /* Adjust size of stars */
+  }
+  
+  .star-rating .fa.checked {
+    color: #ffd700;
+  }
+  
+  /* Styling for the testimonial name */
+  .testimonial-name {
+    color: #00ffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  /* Testimonial feedback */
+  .testimonial-feedback {
+    font-style: italic;
+  }
+  
+  /* Heading */
+  .heading {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .testimonial-item {
+      margin-bottom: 30px;
+    }
+  }
+  

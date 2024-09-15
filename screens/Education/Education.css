@@ -1,0 +1,94 @@
+.education {
+    padding: 50px 0;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .timeline-item:nth-child(even) {
+    justify-content: flex-start;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #00d9d9;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00d9d9;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    width: 400px;
+  }
+  
+  .timeline-year {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00d9d9;
+    margin-bottom: 10px;
+  }
+  
+  /* Tree-like structure line */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 3px;
+    background-color: #00d9d9;
+    z-index: 0;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .timeline-item {
+      justify-content: flex-start; /* Align everything to the left */
+    }
+  
+    .timeline-content {
+      width: 100%;
+      margin-left: 40px;
+    }
+  
+    .timeline-dot {
+      left: 20px; /* Align dots to the left on smaller screens */
+      transform: none;
+    }
+  
+    .timeline::before {
+      left: 20px;
+      transform: none;
+    }
+  }
+  

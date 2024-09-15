@@ -1,0 +1,50 @@
+/* .services {
+    padding: 50px 0;
+    background-color: #000;
+    color: #fff;
+  } */
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  /* Grid layout with two columns */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .service-card {
+    background-color: rgba(0, 217, 217, 0.2);
+    border: 2px solid #00d9d9;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-card h4 {
+    font-size: 1.5rem;
+    color: #00d9d9;
+    margin-bottom: 15px;
+  }
+  
+  .service-card p {
+    color: #fff;
+    line-height: 1.5;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

@@ -1,0 +1,71 @@
+.home {
+    padding: 50px 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+  }
+  
+  .home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-content h1 span {
+    color: #f0ad4e; /* Highlighted color for "Amelisa" */
+  }
+  
+  .home-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .social-icons {
+    margin: 20px 0;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #f0ad4e; /* Highlight color on hover */
+  }
+  
+  .btn-group a {
+    margin-right: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 25px;
+  }
+  
+  .btn-primary {
+    background-color: #f0ad4e;
+    border: none;
+  }
+  
+  .btn-secondary {
+    background-color: #555;
+    border: none;
+  }
+  
+  .home-img img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .home-content {
+      text-align: center;
+    }
+  
+    .home-img {
+      margin-top: 30px;
+    }
+  }
+  
