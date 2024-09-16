@@ -1,7 +1,9 @@
 import React from "react";
+import Typewriter from "react-typewriter-effect";
 import home from "../../src/assets/Home-img.jpeg";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
-import "./Home.css"
+import "./Home.css";
+
 const Home = () => {
   return (
     <div className="home" id="home">
@@ -13,8 +15,17 @@ const Home = () => {
               <h1>
                 Hi, It's <span>Amelisa</span>
               </h1>
-              <h3 className="test-animation">
-                I'm a <span></span>
+              <h3 className="typewriter-container">
+                {" "}
+                <Typewriter
+                  textStyle={{ fontSize: "1.5em", color: "#00ffff", display: 'inline' }}
+                  startDelay={1000}
+                  cursorColor="#00ffff"
+                  multiText={["I'm a Developer", "Designer", "Creator"]}
+                  multiTextDelay={1000}
+                  typeSpeed={50}
+                  hideCursorAfterText={true}
+                />
               </h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -42,12 +53,12 @@ const Home = () => {
 
               {/* Buttons */}
               <div className="btn-group">
-                <a href="#" className="btn btn-primary">
-                  Hire
-                </a>
-                <a href="#contact" className="btn btn-secondary">
-                  Contact
-                </a>
+                <button type="submit" className="btn neon-button">
+                  Send Message
+                </button>
+                <button type="submit" className="btn neon-button">
+                  Send Message
+                </button>
               </div>
             </div>
           </div>

@@ -36,7 +36,7 @@
     transform: translateX(-50%);
     width: 15px;
     height: 15px;
-    background-color: #00d9d9;
+    background-color: #00ffff;
     border-radius: 50%;
     z-index: 1;
   }
@@ -45,9 +45,9 @@
     background-color: rgba(0, 0, 0, 0.8);
     border: 2px solid #00d9d9;
     border-radius: 8px;
-    padding: 20px;
+    padding: 30px;
     position: relative;
-    width: 400px;
+    width: 480px;
   }
   
   .timeline-year {

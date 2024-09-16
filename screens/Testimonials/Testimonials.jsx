@@ -42,7 +42,7 @@ const StarRating = ({ rating }) => {
   
   const Testimonials = () => {
     return (
-      <section className="testimonials py-5">
+      <section className="testimonials py-5" id="testimonials">
         <div className="container">
           <h2 className="heading text-center mb-4">Testimonials</h2>
           <div className="row">

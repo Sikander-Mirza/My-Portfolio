@@ -4,7 +4,7 @@ import './Contact.css'; // Make sure to link this CSS file
 
 const Contact = () => {
   return (
-    <section className="contact py-5">
+    <section className="contact py-5" id="contact">
       <div className="">
         <h2 className="heading text-center mb-5">Contact <span>Me</span></h2>
         <div className="row justify-content-center">

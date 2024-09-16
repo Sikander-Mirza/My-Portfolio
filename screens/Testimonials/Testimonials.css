@@ -1,13 +1,18 @@
 /* Style for the testimonial item */
 .testimonial-item {
-    background-color: #222;
+    background-color: #131111;
     color: #fff;
     border-radius: 10px;
     transition: transform 0.3s;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 15px #00ffff, 0 0 25px #00ffff;   
   }
   
   .testimonial-item:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 25px #00ffff, 0 0 35px #00ffff;
+
   }
   
   /* Updated image style for proper sizing */
