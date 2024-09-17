@@ -1,85 +1,88 @@
 .home {
-    padding: 50px 0;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+  padding: 50px 0;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home-content h1 span {
+  color: #00ffff; /* Highlighted color for "Amelia" */
+}
+
+.home-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  color: #00ffff; /* Neon blue text */
+  font-size: 2rem; /* Increase font size for better visibility */
+  margin-right: 15px;
+  transition: color 0.3s, box-shadow 0.3s, background-color 0.3s; /* Smooth transition */
+  border-radius: 40%; /* Circular icons */
+  padding: 10px; /* Add padding for better hit area */
+  display: inline-block; /* Ensure padding works correctly */
+  text-decoration: none; /* Remove underline */
+}
+
+.social-icons a:hover {
+  color: #000; /* Change text color on hover */
+  background-color: #00d9d9; 
+  box-shadow: 0 0 20px #00d9d9, 0 0 30px #00d9d9; 
+}
+
+.btn-group button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.home-img img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  box-shadow: 0 0 15px #00ffff, 0 0 25px #00ffff;
+  transition: 0.4s;
+  animation: smoothBounce 4s ease-in-out infinite; /* Apply the smooth bounce animation */
+}
+
+.typewriter-container {
+  display: inline;
+}
+
+.home-img img:hover {
+  box-shadow: 0 0 25px #00ffff, 0 0 35px #00ffff;
+}
+
+@keyframes smoothBounce {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-3px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-1.5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-content {
+    text-align: center;
   }
-  
-  .home-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+
+  .home-img {
+    margin-top: 30px;
   }
-  
-  .home-content h1 span {
-    color: #00ffff; /* Highlighted color for "Amelisa" */
-  }
-  
-  .home-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  .social-icons {
-    margin: 20px 0;
-  }
-  
-  .social-icons a {
-    color: #00ffff;
-    font-size: 1.5rem;
-    margin-right: 15px;
-    transition: color 0.3s;
-    border-radius: 50px;
-  }
-  
-  .social-icons a:hover {
-    box-shadow: 0 0 25px #00ffff, 0 0 35px #00ffff;
-    background-color: #00e5e5;
-    
-  }
-  
-  .btn-group button{
-    margin-right: 10px;
-    padding: 10px 20px;
-    color: #fff;
-    border-radius: 25px;
-  }
-  
- 
-  
+
   .home-img img {
-    width: 450px;
-    height: 450px;
-    object-fit: cover;
-    /* border: 5px solid #fff; */
-    box-shadow: 0 0 15px #00ffff, 0 0 25px #00ffff;
-    transition: 0.4s;
-    animation: smoothBounce 4s ease-in-out infinite; /* Apply the smooth bounce animation */
-
+    width: 250px; /* Smaller size for mobile screens */
+    height: 250px; /* Maintain aspect ratio */
   }
-  .typewriter-container {
-    display: inline;
-  }
-  .home-img img:hover {
-    box-shadow: 0 0 25px #00ffff, 0 0 35px #00ffff;
-  }
-
-  @keyframes smoothBounce {
-    0% { transform: translateY(0); }
-    25% { transform: translateY(-3px); }
-    50% { transform: translateY(0); }
-    75% { transform: translateY(-1.5px); }
-    100% { transform: translateY(0); }
-  }
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .home-content {
-      text-align: center;
-    }
-  
-    .home-img {
-      margin-top: 30px;
-    }
-  }
-  
-
-
-  
+}

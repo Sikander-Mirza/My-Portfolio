@@ -1,4 +1,66 @@
-body{
-    background: var(--bg-color);
-    color: var(--bg-color);
-}
+body {
+    padding-top: 80px; /* Adjust this value based on the height of your navbar */
+  }
+  
+  .custom-navbar {
+    background-color: rgba(0, 0, 0, 0.6); /* Slight transparency */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 1rem;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    position: fixed; /* Keep the navbar fixed at the top */
+    width: 100%; /* Ensure it spans the full width */
+    top: 0; /* Align it to the top */
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+  .nav-link {
+    color: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: transparent;
+    transition: all 0.4s ease;
+  }
+  
+  .neon-hover:hover {
+    color: #00d9d9;
+    text-shadow: 0 0 10px #00d9d9, 0 0 20px #00d9d9, 0 0 30px #00d9d9;
+  }
+  
+  .neon-hover:hover::after {
+    background-color: #00d9d9;
+    height: 3px;
+  }
+  
+  /* Ensure the navbar menu items are visible on small screens */
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      background-color: rgba(0, 0, 0, 0.9); /* Ensure background color is visible */
+      padding: 10px;
+    }
+    
+    .navbar-toggler {
+      border-color: #00d9d9; /* Toggler button color */
+    }
+    
+    .navbar-toggler-icon {
+      background-image: url('path/to/your/icon.png'); /* Ensure the toggler icon is visible */
+    }
+  
+    .navbar-nav .nav-link {
+      color: #fff; /* Ensure the text color is white for better visibility */
+    }
+  
+    .navbar-nav .nav-link:hover {
+      color: #00d9d9; /* Neon color on hover for mobile menu */
+    }
+  }
+  
